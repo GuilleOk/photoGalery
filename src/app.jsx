@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <InputPhotoSearch setPhotoToSearch={setPhotoToSearch} />
-      <PhotoGalery photoToSearch={photoToSearch} />
+      <PhotoGalery photoToSearch={photoToSearch} setPhotoToSearch={setPhotoToSearch} />
     </div>
   )
 }

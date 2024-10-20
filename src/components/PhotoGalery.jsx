@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PhotoCollage from './PhotoCollage'
 
-const PhotoGalery = ({ photoToSearch }) => {
+const PhotoGalery = ({ photoToSearch, setPhotoToSearch }) => {
   const [photoGalery, setPhotoGalery] = useState([])
   useEffect(() => {
     if (photoToSearch === '') return
@@ -12,7 +12,7 @@ const PhotoGalery = ({ photoToSearch }) => {
   return (
     <div>
       {photoGalery.map((photo, i) => {
-        return <PhotoCollage photo={photo} key={`${photo}${i}`} />
+        return <PhotoCollage photo={photo} key={`${photo}${i}`} setPhotoToSearch={setPhotoToSearch} item={i} photoGalery={photoGalery} setPhotoGalery={setPhotoGalery} />
       })}
     </div>
   )
