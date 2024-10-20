@@ -1,0 +1,15 @@
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+img{
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
